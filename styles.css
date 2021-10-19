@@ -1,17 +1,44 @@
 .gridContainer {
-  width: 528px;
-  height: 528px;
+  display: flex;
+
+  width: 700px;
+  height: 700px;
   border: 10px solid pink;
+  border-radius: 15px;
+  flex-direction: column;
+
+  /* border-top: 1px solid black; */
+  /* border-left: 1px solid black; */
 }
 
-.grid {
-  float: right;
-  height: 31px;
-  width: 31px;
+.gridRow {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  /* box-shadow: -1px 0, 0 1px, 1px 0, 0 -1px; */
+}
 
-  border: 1px solid black;
+.gridColumn {
+  flex-grow: 1;
+  box-shadow: -1px 0 rgba(255, 0, 0, 0.116), 0 1px rgba(255, 0, 0, 0.116),
+    1px 0 rgba(255, 0, 0, 0.116), 0 -1px rgba(255, 0, 0, 0.116);
 }
 
 .blacked {
   background-color: black;
+}
+
+.btn {
+  padding: 10px;
+  margin: 70px 10px 30px 10px;
+  background-color: lightpink;
+  border-radius: 50px;
+  border: 3px solid rgb(230, 172, 182);
+  font-size: large;
+}
+
+body {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
 }
